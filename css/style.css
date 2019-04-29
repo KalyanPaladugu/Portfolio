@@ -1,0 +1,162 @@
+/* Page header section */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.pageHeader-img {
+  width: 30%;
+}
+
+.designation {
+  text-align: center;
+  color: #3498db;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.scroll {
+  margin-top: 50px;
+}
+
+.founder {
+  font-style: italic;
+}
+
+/*header-img*/
+.content {
+  background-color: #3d3dff;
+  border-radius: 5px;
+}
+
+.dress {
+  background-color: #fff;
+  display: flex;
+  color: #3d3dff;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.img {
+  width: 100%;
+  border-color: #3d3dff;
+}
+
+.main-logo {
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+}
+/* Main dress styles */
+#main-dress {
+  width: 98%;
+  border-radius: 5px;
+}
+
+#main-dress:hover {
+  transform: scale(1.01);
+  transition: 1s;
+  border-radius: 10px;
+}
+
+.img:hover {
+  transform: scale(1.05);
+  transition: 1s;
+  border-radius: 10px;
+}
+
+.shirt-name {
+  font-style: italic;
+  color: #fff;
+  padding: 2%;
+  background-color: #00007a;
+  box-shadow: 3px 3px 3px #ddd;
+}
+
+.casual {
+  border: 1px solid gray;
+  padding: 10px;
+  width: 22%;
+  text-align: center;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 8px 8px -6px #000;
+}
+
+/* Footer styles */
+.footer {
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  padding: 2%;
+  margin-top: 3%;
+}
+
+/*media queries for small mobiles*/
+@media screen and (max-width: 480px) {
+  .dress {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .designation {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .founder {
+    float: right;
+    width: 100%;
+    color: #000;
+  }
+
+  .casual {
+    width: 90%;
+  }
+
+  .shirt-name {
+    margin: 6px;
+  }
+
+  .page-header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .pageHeader-img {
+    width: 100%;
+  }
+}
+
+/*Media query for Mobile*/
+@media only screen and (min-width: 481px) and (max-width: 780px) {
+  .page-header {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .scroll {
+    margin-top: 0px;
+  }
+
+  .pageHeader-img {
+    width: 100%;
+  }
+
+  .casual {
+    width: 40%;
+  }
+
+  .dress {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+/*Media query for ipad*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .casual {
+    width: 20%;
+  }
+}
