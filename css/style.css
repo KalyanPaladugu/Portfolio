@@ -1,4 +1,7 @@
 /* Page header section */
+* {
+font-family: verdana;
+}
 .page-header {
   display: flex;
   justify-content: space-between;
@@ -15,24 +18,19 @@
   font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
-.scroll {
-  margin-top: 50px;
-}
-
+/* Founder details */
 .founder {
   font-style: italic;
+  text-shadow: 2px 2px 2px #ddd;
 }
 
-/*header-img*/
-.content {
-  background-color: #3d3dff;
-  border-radius: 5px;
-}
-
-.dress {
+/* Main content */
+.container {
   background-color: #fff;
   display: flex;
   color: #3d3dff;
+  width: 95%;
+  margin: 1% auto;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -42,22 +40,19 @@
   border-color: #3d3dff;
 }
 
-.main-logo {
-  width: 100%;
+.banner {
+  width: 95%;
+  margin: 1% auto;
   text-align: center;
-  background-color: #fff;
-  border-radius: 5px;
+  background-color: #dcbe38;
+  border: 1px solid #000;
+  box-shadow: 3px 3px 3px #ddd;
 }
 /* Main dress styles */
-#main-dress {
+#banner-img {
   width: 98%;
-  border-radius: 5px;
-}
+  margin: 1% auto;
 
-#main-dress:hover {
-  transform: scale(1.01);
-  transition: 1s;
-  border-radius: 10px;
 }
 
 .img:hover {
@@ -67,20 +62,26 @@
 }
 
 .shirt-name {
-  font-style: italic;
-  color: #fff;
+  color: #000;
+  font-weight: 500;
   padding: 2%;
-  background-color: #00007a;
+  background-color: #eccf5a;
   box-shadow: 3px 3px 3px #ddd;
+  border: 2px solid #d3b61d;
 }
 
-.casual {
+.product {
   border: 1px solid gray;
+  color: #666;
   padding: 10px;
   width: 22%;
   text-align: center;
   margin: 10px;
   border-radius: 5px;
+
+}
+
+.product:hover {
   box-shadow: 0 8px 8px -6px #000;
 }
 
@@ -111,7 +112,7 @@
     color: #000;
   }
 
-  .casual {
+  .product {
     width: 90%;
   }
 
@@ -136,15 +137,11 @@
     flex-wrap: nowrap;
   }
 
-  .scroll {
-    margin-top: 0px;
-  }
-
   .pageHeader-img {
     width: 100%;
   }
 
-  .casual {
+  .product {
     width: 40%;
   }
 
@@ -156,7 +153,7 @@
 }
 /*Media query for ipad*/
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .casual {
+  .product {
     width: 20%;
   }
 }
